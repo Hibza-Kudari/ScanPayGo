@@ -68,8 +68,7 @@ Windows: venv\Scripts\activate
 pip install -r requirements.txt  
 
 4. Run the application  
-python app.py
-python scanner.py
+python app.py & python scanner.py
 
 Application will be available at:  
 http://127.0.0.1:5000
