@@ -53,41 +53,6 @@ It integrates wallet-based payments, QR/NFC ticket validation, deposit-based boo
 - Payments: Wallet simulation
 - Validation: QR & NFC simulation
 
-## 📂 Project Structure
-ScanPayGo/
-├── app.py
-├── scanner.py
-├── make_qr.py
-├── requirements.txt
-├── tickets.db (generated at runtime)
-│
-├── static/
-│   ├── style.css
-│   ├── script.js
-│   ├── qr/ (generated at runtime)
-│   └── nfc_qr/ (generated at runtime)
-│
-├── templates/
-│   ├── base.html
-│   ├── home.html
-│   ├── buses.html
-│   ├── book.html
-│   ├── checkout.html
-│   ├── ticket.html
-│   ├── bookings.html
-│   ├── login.html
-│   ├── register.html
-│   ├── admin.html
-│   ├── admin_login.html
-│   ├── admin_bus_form.html
-│   ├── admin_tickets.html
-│   ├── nfc_qr.html
-│   ├── nfc_pay.html
-│   ├── nfc_result.html
-│   └── simulate_nfc.html
-│
-└── .gitignore
-
 ## ⚙️ Installation & Setup
 
 1. Clone the repository  
