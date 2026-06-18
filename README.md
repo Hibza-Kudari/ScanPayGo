@@ -1,7 +1,7 @@
 # ScanPayGo 🚍💳
 
 ScanPayGo is a smart bus ticket booking and validation system built as an academic mini project.  
-It integrates wallet-based payments, QR/NFC ticket validation, deposit-based booking, refunds, and admin control into a single Flask web application.
+It integrates wallet-based payments, QR/NFC ticket validation, deposit-based booking, and admin control into a single Flask web application.
 
 ## 📌 Features
 
@@ -14,7 +14,6 @@ It integrates wallet-based payments, QR/NFC ticket validation, deposit-based boo
 - QR code based ticket
 - NFC-style payment simulation
 - View all bookings
-- Refund request for paid tickets
 - Cancel unpaid tickets
 
 ### 🚌 Booking Logic
@@ -29,20 +28,15 @@ It integrates wallet-based payments, QR/NFC ticket validation, deposit-based boo
 - Wallet deducted automatically on scan
 - Prevents double payment
 
-### 🔁 Refund System
-- Passengers can request refunds for PAID tickets
-- Refund reason required
-- Admin can approve or reject refunds
-- Approved refunds are credited back to wallet
-- Rejected refunds include admin feedback
-
 ### 🛠 Admin Features
 - Secure admin login
 - Add / edit / delete buses
 - View all tickets
 - Seat occupancy visualization
-- Approve / reject refund requests
 - Ticket management
+
+## 🚧 Planned Improvements
+- **Refund system** — database schema (refund_status, refund_reason, refund_response) is already in place, but the request/approval routes are not yet implemented. Planned flow: passengers request a refund on PAID tickets with a reason, admins approve or reject from a dedicated dashboard, and approved refunds are credited back to the wallet automatically.
 
 ## 🧱 Tech Stack
 - Backend: Flask (Python)
@@ -90,7 +84,6 @@ This project demonstrates:
 - Transaction workflows
 - Payment lifecycle handling
 - QR/NFC validation logic
-- Refund approval systems
 - Admin role management
 
 Suitable for:
